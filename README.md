@@ -4,5 +4,5 @@ This paper tests the hypothesis that the date at which the annual air temperatur
 #### Running Code
 To run code, ensure that the python file containing all code for this analysis is under the same directory as the files in Site Data. (Placing the python file in the Site Data directory will allow code to run smoothly.)
 
-### Statistical Packages
-User will need statistical packages pandas, numpy, scipy, mathplotlib, and seaborn to run python file. See lines 8 - 19 of python file for more information.
+#### Statistical Packages
+User will need statistical packages pandas, numpy, scipy, mathplotlib, and seaborn to run the python file. See lines 8 - 19 of the python file for more information.
