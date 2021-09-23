@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created (date here)
-By Lily Klinek
+By Lily Klinek and Aadiraj Batlaw
 
 """
 
@@ -15,7 +15,7 @@ import plotly.express as px
 import matplotlib.dates as mdates
 import seaborn as sns
 from scipy import stats
-from scipy.stats import norm
+from scipy.stats import norm, skew, kurtosis
 import statsmodels.api as sm
 
 
@@ -343,7 +343,9 @@ rr=str(round((r_value**2),3))
 pp=str(round(p_value,3))
 plt.text(40, 140, 'r-squared = ' +rr)
 plt.text(40, 130, 'p-value = ' + pp)
-plt.savefig('Figures/Best_Working_Group.png')
+plt.legend('',frameon=False)
+#plt.savefig('Figures/Best_Working_Group.png')
+plt.savefig('Figures/Best_Working_Group_No_Legend.png')
 plt.show()
 
 #Testing linearity
@@ -378,6 +380,10 @@ plt.plot(x, p, 'k', linewidth=2)
 plt.title("Histogram of Residuals")
 plt.xlabel("Residual")
 plt.ylabel("Density")
+my_skew = skew(residuals,bias = False)
+my_kurtosis = kurtosis(residuals, bias = False)
+plt.text(20, 0.023, 'Skewness = ' + str(round(my_skew, 3)))
+plt.text(20, 0.02, 'Kurtosis = ' + str(round(my_kurtosis, 3)))
 plt.savefig("Figures/Testing_Normality")
 plt.show()
 
@@ -396,8 +402,8 @@ plt.xlim(30,160)
 plt.ylim(30,160)
 x2=master_2['Day TS > TA']
 y2=master_2['Green-Up Day']
-plt.title("Green-Up Dates: PhenoCam VS Hyphothesized (Low Altitude Sites)")
-plt.savefig('Figures/Testing_Linearity2.png')
+plt.title("Green-Up Dates: PhenoCam VS Hyphothesized (Low Latitude Sites)")
+#plt.savefig('Figures/Testing_Linearity2.png')
 #mask = ~np.isnan(x) & ~np.isnan(y)
 slope2, intercept2, r_value2, p_value2, std_err2 = stats.linregress(x2.astype(float),y2.astype(float))
 fitted_values2 = x2.astype(float) * slope2 + intercept2
@@ -407,7 +413,9 @@ rr2=str(round((r_value2**2),3))
 pp2=str(round(p_value2,3))
 plt.text(40, 140, 'r-squared = ' +rr2)
 plt.text(40, 130, 'p-value = ' + pp2)
-plt.savefig('Figures/Best_Working_Group2.png')
+plt.legend('',frameon=False)
+#plt.savefig('Figures/Best_Working_Group2.png')
+plt.savefig('Figures/Best_Working_Group2_No_Legend.png')
 plt.show()
 
 #Testing linearity
@@ -442,6 +450,10 @@ plt.plot(x, p, 'k', linewidth=2)
 plt.title("Histogram of Residuals")
 plt.xlabel("Residual")
 plt.ylabel("Density")
+my_skew2 = skew(residuals2,bias = False)
+my_kurtosis2 = kurtosis(residuals2, bias = False)
+plt.text(7, 0.1, 'Skewness = ' + str(round(my_skew2, 3)))
+plt.text(7, 0.09, 'Kurtosis = ' + str(round(my_kurtosis2, 3)))
 plt.savefig("Figures/Testing_Normality2")
 plt.show()
 
