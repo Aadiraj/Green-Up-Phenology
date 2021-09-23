@@ -74,43 +74,43 @@ def daily_ta(df):
 
 # saving daily TA / TS csv files        
 tonzi_daily = daily_ta(tonzi_df)
-tonzi_daily.to_csv("AMF_Tonzi_Daily_TA_TS.csv")
+tonzi_daily.to_csv("Daily Data/AMF_Tonzi_Daily_TA_TS.csv")
 
 bartlett_daily = daily_ta(bartlett_df)
-bartlett_daily.to_csv("AMF_Bart_Daily_TA_TS.csv")
+bartlett_daily.to_csv("Daily Data/AMF_Bart_Daily_TA_TS.csv")
 
 morgan_daily = daily_ta(morgan_df)
-morgan_daily.to_csv("AMF_Morgan_Daily_TA_TS.csv")
+morgan_daily.to_csv("Daily Data/AMF_Morgan_Daily_TA_TS.csv")
 
 umb_daily = daily_ta(umb_df)
-umb_daily.to_csv("AMF_UMB_Daily_TA_TS.csv")
+umb_daily.to_csv("Daily Data/AMF_UMB_Daily_TA_TS.csv")
 
 willow_daily = daily_ta(willow_df)
-willow_daily.to_csv("AMF_Willow_Daily_TA_TS.csv")
+willow_daily.to_csv("Daily Data/AMF_Willow_Daily_TA_TS.csv")
 
 chestnut_daily = daily_ta(chestnut_df)
-chestnut_daily.to_csv("AMF_Chestnut_Daily_TA_TS.csv")
+chestnut_daily.to_csv("Daily Data/AMF_Chestnut_Daily_TA_TS.csv")
 
 ozark_daily = daily_ta(ozark_df)
-ozark_daily.to_csv("AMF_Ozark_Daily_TA_TS.csv")
+ozark_daily.to_csv("Daily Data/AMF_Ozark_Daily_TA_TS.csv")
 
 harvard_daily = daily_ta(harvard_df)
-harvard_daily.to_csv("AMF_Harvard_Daily_TA_TS_attempt2.csv")
+harvard_daily.to_csv("Daily Data/AMF_Harvard_Daily_TA_TS_attempt2.csv")
 
 # freeman_daily = daily_ta(freeman_df)
-# freeman_daily.to_csv("AMF_Freeman_Daily_TA_TS.csv")
+# freeman_daily.to_csv("Daily Data/AMF_Freeman_Daily_TA_TS.csv")
 
 saska_daily = daily_ta(saska_df)
-saska_daily.to_csv("AMF_Saska_Daily_TA_TS.csv")
+saska_daily.to_csv("Daily Data/AMF_Saska_Daily_TA_TS.csv")
 
 # univkansas_daily = daily_ta(univkansas_df)
-# univkansas_daily.to_csv("AMF_UnivKansas_Daily_TA_TS.csv")
+# univkansas_daily.to_csv("Daily Data/AMF_UnivKansas_Daily_TA_TS.csv")
 
 vaira_daily = daily_ta(vaira_df)
-vaira_daily.to_csv("AMF_Vaira_Daily_TA_TS.csv")
+vaira_daily.to_csv("Daily Data/AMF_Vaira_Daily_TA_TS.csv")
 
 turkey_daily = daily_ta(turkey_df)
-turkey_daily.to_csv("AMF_Turkey_Daily_TA_TS.csv")
+turkey_daily.to_csv("Daily Data/AMF_Turkey_Daily_TA_TS.csv")
 
 
 
